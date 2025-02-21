@@ -15,8 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = "Email: $email, Display Name: $display_name, Password: $password, First Name: $first_name, Last Name: $last_name, Phone: $phone, Address: $address, Zip: $zip, Country: $country, State: $state\n";
     
     $file = fopen("submissions.txt", "a+");
-    fwrite($file, $data);
-    fclose($file);
+    fwrite(stream: $file, data: $data);
+    fclose(stream: $file);
     
     echo "Thank you for signing up!";
 }
