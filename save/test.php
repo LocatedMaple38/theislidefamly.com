@@ -20,10 +20,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header(header: "Location: https://locatedmaple38.github.io/theislidefamly.com/"); 
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "GET") {
-    $file = fopen(filename: "submissions.txt", mode: "r");
-    fread(stream: $file)
-    fclose(stream: $file);
-    header(header: "Location: https://locatedmaple38.github.io/theislidefamly.com/"); 
-}
+// if ($_SERVER["REQUEST_METHOD"] == "GET") {
+//     $file = fopen(filename: "submissions.txt", mode: "r");
+//     fread(stream: $file)
+//     fclose(stream: $file);
+//     header(header: "Location: https://locatedmaple38.github.io/theislidefamly.com/"); 
+// }
 ?>
