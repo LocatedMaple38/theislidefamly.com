@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $country = htmlspecialchars(string: $_POST['country']);
     $state = htmlspecialchars(string: $_POST['state']);
     
-    $data = "Email: $email, Display Name: $display_name, Password: $password, First Name: $first_name, Last Name: $last_name, Phone: $phone, Address: $address, Zip: $zip, Country: $country, State: $state\n";
+    $data = "Email: $email, Display_Name: $display_name, Password: $password, First_Name: $first_name, Last_Name: $last_name, Phone: $phone, Address: $address, Zip: $zip, Country: $country, State: $state\n";
 
     $file = fopen(filename: "submissions.txt", mode: "a+");
     fwrite(stream: $file, data: $data);
