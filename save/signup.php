@@ -1,6 +1,6 @@
 <!-- filepath: /c:/Users/Student/Desktop/code/github/theislidefamly.com/test.php -->
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $email = htmlspecialchars(string: $_POST['email']);
     $display_name = htmlspecialchars(string: $_POST['display_name']);
     $password = htmlspecialchars(string: $_POST['password']);
@@ -20,11 +20,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // header(header: "Location: https://locatedmaple38.github.io/theislidefamly.com/"); 
     header(header: "Location: https://localhost:8000/");
 }
-
-// if ($_SERVER["REQUEST_METHOD"] == "GET") {
-//     $file = fopen(filename: "submissions.txt", mode: "r");
-//     fread(stream: $file)
-//     fclose(stream: $file);
-//     header(header: "Location: https://locatedmaple38.github.io/theislidefamly.com/"); 
-// }
 ?>
