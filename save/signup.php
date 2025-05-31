@@ -1,4 +1,3 @@
-<!-- filepath: /c:/Users/Student/Desktop/code/github/theislidefamly.com/test.php -->
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $email = htmlspecialchars(string: $_POST['email']);
